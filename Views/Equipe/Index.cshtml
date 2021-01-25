@@ -1,0 +1,69 @@
+@model Equipe
+@{
+    ViewData["Title"] = "Equipes";
+}
+<div class="titulo_pagina">
+            <h1>cadastro de jogador</h1>
+        </div>
+<form class="cadastro" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
+   
+      <div class="campo">
+    <label for="Nome">Nome:</label>
+    <input type="text" name="Nome" />
+    </div>
+
+    <div class="campo">
+    <label for="Nick">Nick do Jogador:</label>
+    <input type="text" name="Nome" />
+    </div>
+
+    <div class="campo">
+    <label for="Email">Email:</label>
+    <input type="email" name="Nome" />
+    </div>
+
+    <div class="campo">
+    <label for="tel">Telefone:</label>
+    <input type="tel" name="Nome" />
+    </div>
+
+
+    <div class="campo " >
+    <label for="sexo">Sexo:</label>
+    </div>
+
+    <div class="campo campo-sexo">
+    <input type="radio"/>
+    <label for="male">Masculino</label><br>
+    <input type="radio"/>
+    <label for="female">Femenino</label><br>
+    <input type="radio"/>
+    <label for="other">Outros</label><br>
+    <input type="radio"/>
+    <label for="outros">Prefiro não dizer</label><br>
+  
+    </div>
+    
+    <div class="campo">
+    <label for="senha">Senha:</label>
+    <input type="password" name="senha" />
+    </div>
+
+    
+    <div class="campo">
+    <label for="senha2"> REpita a Senha:</label>
+    <input type="password" name="senha2" />
+    </div>
+
+    <div class="campo">
+    <label for="Data">Data de Nascimento:</label>
+    <input type="date" name="Nome" />
+    </div>
+
+     <div class="campo">
+    <label for="Imagem">Imagem:</label>
+    <input type="file" name="Imagem" />
+    </div>
+
+    <button class="gradient btn" type="submit">Cadastrar</button>
+</form>
